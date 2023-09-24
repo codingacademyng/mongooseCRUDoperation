@@ -1,0 +1,37 @@
+
+Checkpoint Objective
+In this checkpoint, the main idea is to manipulate MongoDB CRUD operations
+
+Create a database called "contact"
+Create a collection called "contactlist"
+Insert these documents  in "contactlist" :
+Last name: Ben Lahmer, First name: Fares, Email: fares@gmail.com, age:26
+Last name: Kefi, First name: Seif, Email: kefi@gmail.com, age:15
+Last name: Fatnassi, First name: Sarra, Email: sarra.f@gmail.com, age:40
+Last name: Ben Yahia, First name: Rym, age:4
+Last name: Cherif, First name: Sami, age:3
+
+
+
+
+
+//Display all of the contacts list.//
+
+Display all the information about only one person using his ID.
+Display all the contacts with an age >18.
+Display all the contacts with an age>18 and name containing "ah".
+Change the contact's first name from"Kefi Seif" to "Kefi Anis".
+Delete the contacts that are aged under <5.
+Display all of the contacts list.
+NB: You have to save your work as screenshots.
+
+
+
+ let pagelist = `<h2>LESS THAN 18</h2><table border='1'>
+    <tr><th>S/N</th> <th>LASTNAME</th> <th>FIRSTNAME</th> <th>EMAIL</th> <th>AGE</th> <th>UPDATE Profile</th></tr>
+    <tr><td>1</td> <td>${contacts[0].lastname}</td> <td>${contacts[0].firstname}</td> <td>${contacts[0].email}</td> <td>${contacts[0].age}</td><td><a href="/update/${contacts[0]._id}">Update Profile</a></tr>
+    <tr><td>2</td> <td>${contacts[1].lastname}</td> <td>${contacts[1].firstname}</td> <td>${contacts[1].email}</td> <td>${contacts[1].age}</td><td><a href="/update/${contacts[1]._id}">Update Profile</a></tr>
+    <tr><td>3</td> <td>${contacts[2].lastname}</td> <td>${contacts[2].firstname}</td> <td>${contacts[2].email}</td> <td>${contacts[2].age}</td><td><a href="/update/${contacts[2]._id}">Update Profile</a></tr>
+    <tr><td>4</td> <td>${contacts[3].lastname}</td> <td>${contacts[3].firstname}</td> <td>${contacts[3].email}</td> <td>${contacts[3].age}</td><td><a href="/update/${contacts[3]._id}">Update Profile</a></tr>
+    <tr><td>5</td> <td>${contacts[4].lastname}</td> <td>${contacts[4].firstname}</td> <td>${contacts[4].email}</td> <td>${contacts[4].age}</td><td><a href="/update/${contacts[4]._id}">Update Profile</a></tr>
+    </table>`;  
